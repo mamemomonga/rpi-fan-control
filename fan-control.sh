@@ -1,8 +1,12 @@
 #!/bin/bash
 set -eu
 
+# ファンスイッチのGPIOピン
 GPIO_FAN=27
-TEMP_TH="50.0"
+# 温度の閾値
+TEMP_TH="60.0"
+# 監視間隔(秒)
+INTERVAL=30
 
 fan_on() {
 	echo "FAN ON"
@@ -11,7 +15,6 @@ fan_on() {
 	fi
 	echo out > /sys/class/gpio/gpio$GPIO_FAN/direction
 	echo 1 > /sys/class/gpio/gpio$GPIO_FAN/value
-	sleep 30
 }
 
 fan_off() {
@@ -34,6 +37,6 @@ while true; do
 		esac
 		PREV_FLAG=$FLAG
 	fi
-	sleep 1
+	sleep $INTERVAL
 done
 
