@@ -23,3 +23,9 @@ GPIO27に信号線、プラスを+5V、マイナスをGNDに接続
 
 	$ sudo make uninstall
 
+# 参考情報
+
+温度とARMコア周波数の定時監視
+
+	$ sh -c 'while true; do vcgencmd measure_temp; vcgencmd measure_clock arm; sleep 1; done'
+
