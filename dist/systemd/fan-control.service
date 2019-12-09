@@ -1,0 +1,11 @@
+[Unit]
+Description = fan controller
+
+[Service]
+ExecStart = /usr/local/sbin/fan-control.sh
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
+
