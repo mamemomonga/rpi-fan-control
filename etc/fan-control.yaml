@@ -1,0 +1,25 @@
+
+fan_gpio_pin: "GPIO27"
+
+fan_control:
+    - { temp: 60, high: 255 } 
+    - { temp: 55, high: 60  } 
+    - { temp: 54, high: 30  } 
+    - { temp: 53, high: 20  } 
+    - { temp: 52, high: 19  } 
+    - { temp: 51, high: 18  } 
+    - { temp: 50, high: 17  } 
+    - { temp: 49, high: 16  } 
+    - { temp: 48, high: 15  } 
+    - { temp: 47, high: 14  } 
+    - { temp: 46, high: 13  } 
+    - { temp: 45, high: 12  } 
+    - { temp: 44, high: 0   } 
+
+hysteresis: 
+    high: 50
+    low:  55
+
+low_millis: 5
+temp_check_seconds: 5
+

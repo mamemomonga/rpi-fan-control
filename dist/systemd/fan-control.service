@@ -2,7 +2,7 @@
 Description = fan controller
 
 [Service]
-ExecStart = /usr/local/sbin/fan-control.sh
+ExecStart = /usr/local/sbin/fan-control -config /usr/local/etc/fan-control.yaml
 Restart = always
 Type = simple
 
