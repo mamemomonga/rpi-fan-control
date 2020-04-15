@@ -7,6 +7,8 @@ GPIOをON/OFFし、PWMでファンの速度をコントロールします。
 ![photo3](images/photo3.jpg)
 ![photo4](images/photo4.jpg)
 
+オーディオジャックはシリアルポートです。
+
 # 回路図
 
 ![image1](images/image1.jpg)
