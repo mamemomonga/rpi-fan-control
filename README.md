@@ -2,7 +2,10 @@
 
 GPIOをON/OFFし、PWMでファンの速度をコントロールします。
 
-![image2](images/image2.jpg)
+![photo1](images/photo1.jpg)
+![photo2](images/photo2.jpg)
+![photo3](images/photo3.jpg)
+![photo4](images/photo4.jpg)
 
 # 回路図
 
